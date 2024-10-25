@@ -1,0 +1,22 @@
+<div class="main-container">
+  <div>Nome</div>
+  <div>ID</div>
+  <div>REC</div>
+  <div>Prison</div>
+</div>
+<div *ngFor="let member of members" class="member-row">
+  <div>{{ member.nome }}</div>
+  <div>{{ member.id }}</div>
+  <div>{{ member.rec }}</div>
+  <div>{{ member.prison }}</div>
+</div>
+
+<button (click)="showForm = !showForm">Cadastrar Novo Membro</button>
+
+<div *ngIf="showForm" class="form-container">
+  <input [(ngModel)]="newMember.nome" placeholder="Nome">
+  <input [(ngModel)]="newMember.id" placeholder="ID" type="number">
+  <input [(ngModel)]="newMember.rec" placeholder="REC" type="number">
+  <input [(ngModel)]="newMember.prison" placeholder="Prison" type="number">
+  <button (click)="addMember()">Adicionar</button>
+</div>

@@ -1,0 +1,42 @@
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.main-container > div {
+  font-weight: bold;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.member-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.member-row > div {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.member-row > div:hover {
+  background-color: #e0e0e0;
+}
+
+.form-container {
+  margin-top: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
