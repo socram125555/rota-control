@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { DataService, Member } from '../data.service';
 
 @Component({
   selector: 'app-main',
@@ -9,34 +10,24 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
 })
-export class MainComponent {
-  members: Array<{ nome: string; id: number; rec: number; prison: number }> = [
-    {
-      nome: 'Socram',
-      id: 113858,
-      rec: 0,
-      prison: 0,
-    },
-    {
-      nome: 'Lukas',
-      id: 131269,
-      rec: 0,
-      prison: 0,
-    },
-    {
-      nome: 'Davi lucas',
-      id: 110963,
-      rec: 0,
-      prison: 0,
-    },
-  ];
-
+export class MainComponent implements OnInit {
+  members: Member[] = []; // Move a declaração para fora do ngOnInit
   showForm = false;
-  newMember = { nome: '', id: 0, rec: 0, prison: 0 };
+  newMember: Member = { name: '', idMember: 0, rec: 0, prison: 0, period: '' }; // Corrigir para usar o tipo Member
+
+  constructor(private dataService: DataService) {}
+
+  ngOnInit() {
+    this.dataService.getMembers().subscribe((data) => {
+      this.members = data;
+
+      console.log(this.members);
+    });
+  }
 
   addMember() {
     this.members.push({ ...this.newMember });
-    this.newMember = { nome: '', id: 0, rec: 0, prison: 0 };
+    this.newMember = { name: '', idMember: 0, rec: 0, prison: 0, period: '' }; // Resetando para usar o tipo correto
     this.showForm = false;
   }
 }
