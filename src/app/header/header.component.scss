@@ -1,11 +1,62 @@
-.header {
-  height: 60px;
-  background-color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Stardos+Stencil:wght@400;700&display=swap');
 
-  > div {
-    color: #fff;
-  }
+:root {
+  --cor0:#0D0D0D;
+  --cor1:#1C1C1C;
+  --cor2:#D4AF37;
+
+
 }
+
+.header {
+  font-family: "Stardos Stencil", system-ui;;
+  font-weight: bold;
+  height: 150px;
+  padding: 10px;
+  background-color: rgb(13,13,13);
+  background-image: linear-gradient(to right, (13,13, 1), rgb(43, 40, 40));
+  }
+img{
+ height: 100%;
+ 
+ float: left;
+}
+button{
+  float: right;
+  margin-top: 120px;
+  margin-right: 20px;
+  padding-right: 10px;
+  background-color: #0D0D0D;
+  color: #D4AF37;
+}
+button:hover{
+  color: #0D0D0D;
+  background-color: #D4AF37;
+}
+h1{
+  
+  color: #D4AF37;
+  text-align: center;
+  padding-top:40px ;
+  
+}
+
+nav a {
+  text-decoration: none;
+  position: relative;
+  padding: 10px ;
+  font-weight: bolder;
+  color: #D4AF37;
+  
+ 
+  
+  line-height: 20px;
+  border-radius: 5px;
+  transition-duration: 0.6s;
+  
+}
+nav a:hover{
+  color: #0D0D0D;
+  background-color: #D4AF37;
+}
+
