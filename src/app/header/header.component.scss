@@ -7,18 +7,23 @@
 
 
 }
-
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 .header {
   font-family: "Stardos Stencil", system-ui;;
   font-weight: bold;
   height: 150px;
-  padding: 10px;
+  width:100% ;
   background-color: rgb(13,13,13);
-  background-image: linear-gradient(to right, (13,13, 1), rgb(43, 40, 40));
+  background-image: linear-gradient(to right, black, rgba(48, 48, 41, 0.959));
+
+
   }
 img{
  height: 100%;
- 
  float: left;
 }
 button{
@@ -34,29 +39,68 @@ button:hover{
   background-color: #D4AF37;
 }
 h1{
-  
   color: #D4AF37;
   text-align: center;
   padding-top:40px ;
   
 }
-
+nav{
+  padding: 30px;
+  margin-left: 150px;
+  
+}
 nav a {
   text-decoration: none;
   position: relative;
-  padding: 10px ;
+  padding:30px;
+  margin-left: auto;
   font-weight: bolder;
   color: #D4AF37;
-  
- 
-  
-  line-height: 20px;
-  border-radius: 5px;
+  line-height: 1.25em;
+  border-radius: 0.312em;
   transition-duration: 0.6s;
-  
 }
 nav a:hover{
   color: #0D0D0D;
   background-color: #D4AF37;
+ 
+  
+ 
+}
+@media screen and (max-width: 780px) {
+  .menu{
+    text-align: center;
+    height: 20px;
+    margin-left: 0px;
+    padding: 10px;
+  }
+  .menu > a{
+    padding: 5px;
+  }
+}
+@media  screen and (max-width:500px){
+  .header{
+    font-size: small;
+    text-align: center;
+  }
+  .menu{
+    padding-top: 40px;
+    
+  }
+  
+  
+  .header > img{
+    display: none;
+  }
+  
 }
 
+
+  
+    
+   
+   
+
+  
+
+  
