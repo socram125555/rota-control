@@ -21,6 +21,8 @@ export class HistoricalComponent implements OnInit {
   ngOnInit() {
     this.dataService.getMembers().subscribe((data) => {
       this.members = data;
+
+      console.log("membros",this.members)
     });
   }
 
@@ -28,5 +30,15 @@ export class HistoricalComponent implements OnInit {
     this.members.push({ ...this.newMember });
     this.newMember = { name: '', idMember: 0, rec: 0, prison: 0, period: '' }; // Resetando para usar o tipo correto
     this.showForm = false;
+  }
+
+  getClassGoal(rec: number): string {
+    if (rec >= 25) {
+      return 'color-green';
+    } else if (rec >= 15 && rec < 25) {
+      return 'color-yellow';
+    } else {
+      return 'color-red';
+    }
   }
 }
