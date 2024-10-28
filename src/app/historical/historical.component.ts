@@ -22,6 +22,9 @@ export class HistoricalComponent implements OnInit {
     period: '',
     typeMember: '',
   }; // Corrigir para usar o tipo Member
+  options: string[] = ['teste', 'dois'];
+  selectedOption: string | null = null;
+  isOpen = false;
 
   constructor(private dataService: DataService) {}
 
@@ -29,7 +32,7 @@ export class HistoricalComponent implements OnInit {
     this.dataService.getMembers().subscribe((data) => {
       this.members = data;
 
-      console.log("membros",this.members)
+      console.log('membros', this.members);
     });
   }
 
@@ -57,11 +60,15 @@ export class HistoricalComponent implements OnInit {
   }
 
   getClassType(memberType: string): string {
-   
     return `members-${memberType}`;
   }
 
+  toggleDropdown() {
+    this.isOpen = !this.isOpen;
+  }
 
-
+  selectOption(option: string) {
+    this.selectedOption = option;
+    this.isOpen = false;
+  }
 }
-
