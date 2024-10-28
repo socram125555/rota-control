@@ -7,6 +7,7 @@ export interface Member {
   rec: number; // O rec é um número
   prison: number; // O prison é um número
   period: string; // O period é uma string
+  typeMember: string;
 }
 
 @Injectable({
@@ -20,6 +21,7 @@ export class DataService {
       rec: 24,
       prison: 50,
       period: '06/10 a 12/10',
+      typeMember: 'membro',
     },
     {
       name: '[SD|RT] MORENA SILVA',
@@ -27,6 +29,7 @@ export class DataService {
       rec: 0,
       prison: 101,
       period: '06/10 a 12/10',
+      typeMember: 'membro',
     },
     {
       name: '[2°SGT|RT] Alex Gomes',
@@ -34,6 +37,7 @@ export class DataService {
       rec: 1,
       prison: 1,
       period: '06/10 a 12/10',
+      typeMember: 'membro',
     },
     {
       name: '[CB|RT] Gustavo',
@@ -41,6 +45,7 @@ export class DataService {
       rec: 7,
       prison: 42,
       period: '06/10 a 12/10',
+      typeMember: 'membro',
     },
     {
       name: '[CB|RT] Mineirinho',
@@ -48,6 +53,7 @@ export class DataService {
       rec: 0,
       prison: 1,
       period: '06/10 a 12/10',
+      typeMember: 'membro',
     },
     {
       name: '[3°SGT|RT] Lukas silva',
@@ -55,6 +61,7 @@ export class DataService {
       rec: 2,
       prison: 36,
       period: '06/10 a 12/10',
+      typeMember: 'membro',
     },
     {
       name: '[3°SGT|RT] Misto Quente',
@@ -62,6 +69,7 @@ export class DataService {
       rec: 0,
       prison: 43,
       period: '06/10 a 12/10',
+      typeMember: 'membro',
     },
     {
       name: '[2ºTEN|RT] Jack Bauer',
@@ -69,6 +77,7 @@ export class DataService {
       rec: 8,
       prison: 30,
       period: '06/10 a 12/10',
+      typeMember: 'membro',
     },
     {
       name: '[S.TEN|RT] Joao X.',
@@ -76,6 +85,7 @@ export class DataService {
       rec: 0,
       prison: 38,
       period: '06/10 a 12/10',
+      typeMember: 'membro',
     },
     {
       name: '[S.TEN|RT] Faustinho',
@@ -83,6 +93,7 @@ export class DataService {
       rec: 0,
       prison: 66,
       period: '06/10 a 12/10',
+      typeMember: 'membro',
     },
     {
       name: '[1°SGT|RT] Danilo',
@@ -90,6 +101,7 @@ export class DataService {
       rec: 50,
       prison: 14,
       period: '06/10 a 12/10',
+      typeMember: 'membro',
     },
     {
       name: '[2°SGT|RT] Larissa X.',
@@ -97,6 +109,7 @@ export class DataService {
       rec: 26,
       prison: 50,
       period: '06/10 a 12/10',
+      typeMember: 'membro',
     },
     {
       name: '[2ºTEN|RT] Creusa S.',
@@ -104,6 +117,7 @@ export class DataService {
       rec: 44,
       prison: 40,
       period: '06/10 a 12/10',
+      typeMember: 'membro',
     },
     {
       name: 'DAVI LUCAS',
@@ -111,6 +125,7 @@ export class DataService {
       rec: 15,
       prison: 23,
       period: '22/09 a 28/09',
+      typeMember: 'membro',
     },
     {
       name: 'Danilo',
@@ -118,6 +133,7 @@ export class DataService {
       rec: 35,
       prison: 4,
       period: '22/09 a 28/09',
+      typeMember: 'membro',
     },
     {
       name: 'Faustinho',
@@ -125,6 +141,7 @@ export class DataService {
       rec: 0,
       prison: 39,
       period: '22/09 a 28/09',
+      typeMember: 'membro',
     },
     {
       name: 'Joao Robin',
@@ -132,6 +149,7 @@ export class DataService {
       rec: 7,
       prison: 70,
       period: '22/09 a 28/09',
+      typeMember: 'membro',
     },
     {
       name: 'creusa Ross',
@@ -139,6 +157,7 @@ export class DataService {
       rec: 3,
       prison: 35,
       period: '22/09 a 28/09',
+      typeMember: 'membro',
     },
     {
       name: 'Jack Bauer',
@@ -146,6 +165,7 @@ export class DataService {
       rec: 21,
       prison: 17,
       period: '22/09 a 28/09',
+      typeMember: 'membro',
     },
     {
       name: 'Misto Quente',
@@ -153,6 +173,7 @@ export class DataService {
       rec: 2,
       prison: 29,
       period: '22/09 a 28/09',
+      typeMember: 'membro',
     },
     {
       name: 'MARCOS',
@@ -160,6 +181,7 @@ export class DataService {
       rec: 2,
       prison: 20,
       period: '22/09 a 28/09',
+      typeMember: 'membro',
     },
     {
       name: 'MINEIRINHO',
@@ -167,6 +189,7 @@ export class DataService {
       rec: 0,
       prison: 31,
       period: '22/09 a 28/09',
+      typeMember: 'membro',
     },
     {
       name: 'Samuel C.',
@@ -174,6 +197,7 @@ export class DataService {
       rec: 2,
       prison: 98,
       period: '22/09 a 28/09',
+      typeMember: 'membro',
     },
     {
       name: 'Alex Gomes',
@@ -181,6 +205,7 @@ export class DataService {
       rec: 0,
       prison: 22,
       period: '22/09 a 28/09',
+      typeMember: 'membro',
     },
     {
       name: 'Larissa X.',
@@ -188,6 +213,7 @@ export class DataService {
       rec: 0,
       prison: 102,
       period: '22/09 a 28/09',
+      typeMember: 'membro',
     },
     {
       name: 'DAVI LUCAS',
@@ -195,6 +221,7 @@ export class DataService {
       rec: 0,
       prison: 30,
       period: '16/09 a 21/09',
+      typeMember: 'membro',
     },
     {
       name: 'Danilo',
@@ -202,6 +229,7 @@ export class DataService {
       rec: 0,
       prison: 11,
       period: '16/09 a 21/09',
+      typeMember: 'membro',
     },
     {
       name: 'Faustinho',
@@ -209,6 +237,7 @@ export class DataService {
       rec: 0,
       prison: 33,
       period: '16/09 a 21/09',
+      typeMember: 'membro',
     },
     {
       name: 'Joao Robin',
@@ -216,6 +245,7 @@ export class DataService {
       rec: 0,
       prison: 29,
       period: '16/09 a 21/09',
+      typeMember: 'membro',
     },
     {
       name: 'Creusa Ross',
@@ -223,6 +253,7 @@ export class DataService {
       rec: 0,
       prison: 26,
       period: '16/09 a 21/09',
+      typeMember: 'membro',
     },
     {
       name: 'Daniel',
@@ -230,6 +261,7 @@ export class DataService {
       rec: 0,
       prison: 1,
       period: '16/09 a 21/09',
+      typeMember: 'membro',
     },
     {
       name: 'Jack Bauer',
@@ -237,6 +269,7 @@ export class DataService {
       rec: 0,
       prison: 9,
       period: '16/09 a 21/09',
+      typeMember: 'membro',
     },
     {
       name: 'Misto Quente',
@@ -244,6 +277,7 @@ export class DataService {
       rec: 0,
       prison: 25,
       period: '16/09 a 21/09',
+      typeMember: 'membro',
     },
     {
       name: 'PERES',
@@ -251,6 +285,7 @@ export class DataService {
       rec: 0,
       prison: 18,
       period: '16/09 a 21/09',
+      typeMember: 'membro',
     },
     {
       name: 'MARCos',
@@ -258,6 +293,7 @@ export class DataService {
       rec: 0,
       prison: 30,
       period: '16/09 a 21/09',
+      typeMember: 'membro',
     },
     {
       name: 'MINEIRINHO',
@@ -265,6 +301,7 @@ export class DataService {
       rec: 0,
       prison: 25,
       period: '16/09 a 21/09',
+      typeMember: 'membro',
     },
     {
       name: 'Brabus extreme',
@@ -272,6 +309,7 @@ export class DataService {
       rec: 0,
       prison: 14,
       period: '16/09 a 21/09',
+      typeMember: 'membro',
     },
     {
       name: 'Samuel C.',
@@ -279,6 +317,7 @@ export class DataService {
       rec: 0,
       prison: 54,
       period: '16/09 a 21/09',
+      typeMember: 'membro',
     },
     {
       name: 'Alex Gomes',
@@ -286,6 +325,7 @@ export class DataService {
       rec: 0,
       prison: 13,
       period: '16/09 a 21/09',
+      typeMember: 'membro',
     },
     {
       name: 'Larissa X.',
@@ -293,6 +333,7 @@ export class DataService {
       rec: 0,
       prison: 47,
       period: '16/09 a 21/09',
+      typeMember: 'membro',
     },
     {
       name: 'Cecilia',
@@ -300,6 +341,7 @@ export class DataService {
       rec: 0,
       prison: 11,
       period: '16/09 a 21/09',
+      typeMember: 'membro',
     },
     {
       name: 'MINEIRINHO',
@@ -307,6 +349,7 @@ export class DataService {
       rec: 0,
       prison: 5,
       period: '09/09 a 15/09',
+      typeMember: 'membro',
     },
     {
       name: 'Marcos',
@@ -314,6 +357,7 @@ export class DataService {
       rec: 4,
       prison: 27,
       period: '09/09 a 15/09',
+      typeMember: 'membro',
     },
     {
       name: 'PERES',
@@ -321,6 +365,7 @@ export class DataService {
       rec: 2,
       prison: 29,
       period: '09/09 a 15/09',
+      typeMember: 'membro',
     },
     {
       name: 'Misto Quente',
@@ -328,6 +373,7 @@ export class DataService {
       rec: 4,
       prison: 25,
       period: '09/09 a 15/09',
+      typeMember: 'membro',
     },
     {
       name: 'Jack Bauer',
@@ -335,6 +381,7 @@ export class DataService {
       rec: 28,
       prison: 18,
       period: '09/09 a 15/09',
+      typeMember: 'membro',
     },
     {
       name: 'DANIEL',
@@ -342,6 +389,7 @@ export class DataService {
       rec: 0,
       prison: 7,
       period: '09/09 a 15/09',
+      typeMember: 'membro',
     },
     {
       name: 'Creusa Ross',
@@ -349,6 +397,7 @@ export class DataService {
       rec: 5,
       prison: 47,
       period: '09/09 a 15/09',
+      typeMember: 'membro',
     },
     {
       name: 'Joao Robin',
@@ -356,6 +405,7 @@ export class DataService {
       rec: 17,
       prison: 43,
       period: '09/09 a 15/09',
+      typeMember: 'membro',
     },
     {
       name: 'Faustinho',
@@ -363,6 +413,7 @@ export class DataService {
       rec: 16,
       prison: 13,
       period: '09/09 a 15/09',
+      typeMember: 'membro',
     },
     {
       name: 'Danilo',
@@ -370,6 +421,7 @@ export class DataService {
       rec: 12,
       prison: 15,
       period: '09/09 a 15/09',
+      typeMember: 'membro',
     },
     {
       name: 'DAVI LUCAS',
@@ -377,6 +429,7 @@ export class DataService {
       rec: 16,
       prison: 17,
       period: '09/09 a 15/09',
+      typeMember: 'membro',
     },
     {
       name: 'TIO PAULO',
@@ -384,6 +437,7 @@ export class DataService {
       rec: 16,
       prison: 7,
       period: '09/09 a 15/09',
+      typeMember: 'membro',
     },
     {
       name: 'Marcos',
@@ -391,6 +445,7 @@ export class DataService {
       rec: 21,
       prison: 7,
       period: '02/08 a 08/09',
+      typeMember: 'membro',
     },
     {
       name: 'PERES',
@@ -398,6 +453,7 @@ export class DataService {
       rec: 0,
       prison: 33,
       period: '02/08 a 08/09',
+      typeMember: 'membro',
     },
     {
       name: 'Misto Quente',
@@ -405,6 +461,7 @@ export class DataService {
       rec: 4,
       prison: 25,
       period: '02/08 a 08/09',
+      typeMember: 'membro',
     },
     {
       name: 'Jack Bauer',
@@ -412,6 +469,7 @@ export class DataService {
       rec: 27,
       prison: 9,
       period: '02/08 a 08/09',
+      typeMember: 'membro',
     },
     {
       name: 'DANIEL',
@@ -419,6 +477,7 @@ export class DataService {
       rec: 0,
       prison: 10,
       period: '02/08 a 08/09',
+      typeMember: 'membro',
     },
     {
       name: 'Creusa Ross',
@@ -426,6 +485,7 @@ export class DataService {
       rec: 1,
       prison: 5,
       period: '02/08 a 08/09',
+      typeMember: 'membro',
     },
     {
       name: 'TIO PAULO',
@@ -433,6 +493,7 @@ export class DataService {
       rec: 6,
       prison: 17,
       period: '02/08 a 08/09',
+      typeMember: 'membro',
     },
     {
       name: 'DAVI LUCAS',
@@ -440,6 +501,7 @@ export class DataService {
       rec: 4,
       prison: 6,
       period: '02/08 a 08/09',
+      typeMember: 'membro',
     },
     {
       name: 'Danilo',
@@ -447,6 +509,7 @@ export class DataService {
       rec: 6,
       prison: 5,
       period: '02/08 a 08/09',
+      typeMember: 'membro',
     },
     {
       name: 'Faustinho',
@@ -454,6 +517,7 @@ export class DataService {
       rec: 24,
       prison: 15,
       period: '02/08 a 08/09',
+      typeMember: 'membro',
     },
     {
       name: 'Joao Robin',
@@ -461,6 +525,7 @@ export class DataService {
       rec: 12,
       prison: 29,
       period: '02/08 a 08/09',
+      typeMember: 'membro',
     },
     {
       name: 'TIO PAULO',
@@ -468,6 +533,7 @@ export class DataService {
       rec: 14,
       prison: 9,
       period: '26/08 a 01/09',
+      typeMember: 'membro',
     },
     {
       name: 'Faustinho',
@@ -475,6 +541,7 @@ export class DataService {
       rec: 25,
       prison: 12,
       period: '26/08 a 01/09',
+      typeMember: 'membro',
     },
     {
       name: 'Danilo',
@@ -482,6 +549,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '26/08 a 01/09',
+      typeMember: 'membro',
     },
     {
       name: 'DAVI LUCAS',
@@ -489,6 +557,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '26/08 a 01/09',
+      typeMember: 'membro',
     },
     {
       name: 'Joao Robin',
@@ -496,6 +565,7 @@ export class DataService {
       rec: 9,
       prison: 7,
       period: '26/08 a 01/09',
+      typeMember: 'membro',
     },
     {
       name: 'Jack Bauer',
@@ -503,6 +573,7 @@ export class DataService {
       rec: 28,
       prison: 11,
       period: '26/08 a 01/09',
+      typeMember: 'membro',
     },
     {
       name: 'Peres',
@@ -510,6 +581,7 @@ export class DataService {
       rec: 1,
       prison: 9,
       period: '26/08 a 01/09',
+      typeMember: 'membro',
     },
     {
       name: '[2ºTEN|RT] DAVI LUCAS',
@@ -517,6 +589,7 @@ export class DataService {
       rec: 10,
       prison: 46,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
     {
       name: '[1°SGT|RT] Danilo',
@@ -524,6 +597,7 @@ export class DataService {
       rec: 79,
       prison: 8,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
     {
       name: '[S.TEN|RT] Faustinho',
@@ -531,6 +605,7 @@ export class DataService {
       rec: 0,
       prison: 62,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
     {
       name: '[2°SGT|RT] Lucas Junior',
@@ -538,6 +613,7 @@ export class DataService {
       rec: 14,
       prison: 21,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
     {
       name: '[3°SGT|RT] João Pedro',
@@ -545,6 +621,7 @@ export class DataService {
       rec: 1,
       prison: 104,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
     {
       name: '[3°SGT|RT] Lukas silva',
@@ -552,6 +629,7 @@ export class DataService {
       rec: 3,
       prison: 108,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
     {
       name: '[CB|RT] Gustavo',
@@ -559,6 +637,7 @@ export class DataService {
       rec: 1,
       prison: 21,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
     {
       name: '[SD|RT] MORENO SILVA',
@@ -566,6 +645,7 @@ export class DataService {
       rec: 0,
       prison: 33,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
     {
       name: '[CB|RT] Josh M.',
@@ -573,6 +653,7 @@ export class DataService {
       rec: 4,
       prison: 20,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
     {
       name: '[3°SGT|RT] Misto Quente',
@@ -580,6 +661,7 @@ export class DataService {
       rec: 3,
       prison: 38,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
     {
       name: '[2ºTEN|RT] Jack Bauer',
@@ -587,6 +669,7 @@ export class DataService {
       rec: 11,
       prison: 4,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
     {
       name: '[S.TEN|RT] Joao X.',
@@ -594,6 +677,7 @@ export class DataService {
       rec: 0,
       prison: 17,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
     {
       name: '[1°SGT|RT] Marcos',
@@ -601,6 +685,7 @@ export class DataService {
       rec: 0,
       prison: 17,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
     {
       name: 'MINEIRINHO',
@@ -608,6 +693,7 @@ export class DataService {
       rec: 0,
       prison: 30,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
     {
       name: 'Samuel C.',
@@ -615,6 +701,7 @@ export class DataService {
       rec: 0,
       prison: 54,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
     {
       name: '[2°SGT|RT] Alex Gomes',
@@ -622,6 +709,7 @@ export class DataService {
       rec: 0,
       prison: 5,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
     {
       name: '[2°SGT|RT] Larissa X.',
@@ -629,6 +717,7 @@ export class DataService {
       rec: 1,
       prison: 53,
       period: '29/09 a 05/10',
+      typeMember: 'membro',
     },
   ];
 
@@ -639,6 +728,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'membro',
     },
     {
       name: '[CAP|RT] Faustinho',
@@ -646,6 +736,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'membro',
     },
     {
       name: '[S.TEN|RT] Raphael',
@@ -653,6 +744,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'membro',
     },
     {
       name: '[CAP|RT] Davi L.',
@@ -660,6 +752,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'membro',
     },
     {
       name: '[1°SGT|RT] Misto Quente',
@@ -667,6 +760,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'membro',
     },
     {
       name: '[1ºTEN|RT] João',
@@ -674,6 +768,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'membro',
     },
     {
       name: '[CB|RT] Mineirinho BH',
@@ -681,6 +776,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'membro',
     },
     {
       name: '[CB|RT] Ralf',
@@ -688,6 +784,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'membro',
     },
     {
       name: '[SD|RT] Lima',
@@ -695,6 +792,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'membro',
     },
     {
       name: '[SD|RT] alveszpedro',
@@ -702,6 +800,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'membro',
     },
     {
       name: '[CB|RT] Marcio',
@@ -709,6 +808,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'membro',
     },
     {
       name: '[CB|RT] Brabus extreme',
@@ -716,6 +816,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'membro',
     },
     {
       name: '[SD|RT] Gabriel Silva',
@@ -723,6 +824,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'estagiario',
     },
     {
       name: '[SD|RT] Doo Guedes',
@@ -730,6 +832,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'estagiario',
     },
     {
       name: '[SD|RT] tauan',
@@ -737,6 +840,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'estagiario',
     },
     {
       name: '[SD|RT] RAUAN WESLLEY',
@@ -744,6 +848,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'estagiario',
     },
     {
       name: '[CB|RT] Big Bigode',
@@ -751,6 +856,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'estagiario',
     },
     {
       name: '[SD|RT] Drey',
@@ -758,6 +864,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'estagiario',
     },
     {
       name: '[CB|RT] Alexander M',
@@ -765,6 +872,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'estagiario',
     },
     {
       name: '[CB|RT] Nathan F.',
@@ -772,6 +880,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'estagiario',
     },
     {
       name: '[3°SGT|RT] Allan M.',
@@ -779,6 +888,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'estagiario',
     },
     {
       name: '[SD|RT] Silva',
@@ -786,6 +896,7 @@ export class DataService {
       rec: 0,
       prison: 0,
       period: '',
+      typeMember: 'estagiario',
     },
   ];
 
