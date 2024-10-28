@@ -26,6 +26,9 @@ img{
  height: 100%;
  float: left;
 }
+div >img{
+  width: 20px;
+}
 button{
   float: right;
   margin-top: 120px;
@@ -94,7 +97,6 @@ nav a:hover{
   }
   
 }
-
 
   
     

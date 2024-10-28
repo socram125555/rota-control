@@ -6,6 +6,46 @@
     padding: 10px;
     font-weight: bold;
 }
-.teste > div{
-   
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+.data-table #leg {
+    background-color: rgb(184, 182, 182);
+}
+.data-table #esta{
+    background-color: rgba(255, 255, 0, 0.836);
+}
+.data-table #member {
+    background-color: rgba(43, 43, 194, 0.842);
+}
+.data-table #super{
+    background-color: rgba(38, 192, 58, 0.719);
+}
+.data-table #rem{
+    background-color: #ce1a1adc;
+}
+.data-table #ause{
+background-color: rgba(182, 36, 162, 0.822);
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-table tr:hover {
+  background-color: #f1f1f1;
 }
