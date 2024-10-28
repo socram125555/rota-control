@@ -632,10 +632,172 @@ export class DataService {
     },
   ];
 
+  private apiMembersNew: Member[] = [
+    {
+      name: '[1°TEN|PM] Lukas Silva',
+      idMember: 131269,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[CAP|RT] Faustinho',
+      idMember: 147271,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[S.TEN|RT] Raphael',
+      idMember: 62,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[CAP|RT] Davi L.',
+      idMember: 110963,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[1°SGT|RT] Misto Quente',
+      idMember: 53237,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[1ºTEN|RT] João',
+      idMember: 156899,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[CB|RT] Mineirinho BH',
+      idMember: 25348,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[CB|RT] Ralf',
+      idMember: 188707,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[SD|RT] Lima',
+      idMember: 188644,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[SD|RT] alveszpedro',
+      idMember: 192132,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[CB|RT] Marcio',
+      idMember: 185900,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[CB|RT] Brabus extreme',
+      idMember: 166923,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[SD|RT] Gabriel Silva',
+      idMember: 202708,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[SD|RT] Doo Guedes',
+      idMember: 45326,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[SD|RT] tauan',
+      idMember: 202387,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[SD|RT] RAUAN WESLLEY',
+      idMember: 202650,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[CB|RT] Big Bigode',
+      idMember: 56029,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[SD|RT] Drey',
+      idMember: 202141,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[CB|RT] Alexander M',
+      idMember: 196072,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[CB|RT] Nathan F.',
+      idMember: 192353,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[3°SGT|RT] Allan M.',
+      idMember: 183701,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+    {
+      name: '[SD|RT] Silva',
+      idMember: 181415,
+      rec: 0,
+      prison: 0,
+      period: '',
+    },
+  ];
+
   constructor() {}
 
   // Método para enviar o array
   getMembers() {
     return of(this.apiUrl); // Envia o array como um Observable
+  }
+
+  // Método para enviar o array
+  getMembersNews() {
+    return of(this.apiMembersNew); // Envia o array como um Observable
   }
 }

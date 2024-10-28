@@ -19,8 +19,10 @@ export class MainComponent implements OnInit {
   constructor(private dataService: DataService) {}
 
   ngOnInit() {
-    this.dataService.getMembers().subscribe((data) => {
+    this.dataService.getMembersNews().subscribe((data) => {
       this.members = data;
+
+      console.log('1', this.members);
     });
   }
 
