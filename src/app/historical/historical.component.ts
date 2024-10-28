@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class HistoricalComponent implements OnInit {
   members: Member[] = []; // Move a declaração para fora do ngOnInit
+  filterMembers: Member[] = [];
   showForm = false;
   newMember: Member = {
     name: '',
@@ -28,18 +29,18 @@ export class HistoricalComponent implements OnInit {
   // Create a Set to store unique periods
   uniquePeriods = new Set<string>();
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService) {}
 
   ngOnInit() {
     this.dataService.getMembers().subscribe((data) => {
       this.members = data;
-      data.forEach(member => {
+      data.forEach((member) => {
         this.uniquePeriods.add(member.period);
       });
       // Convert the Set back to an array if needed
       const uniquePeriodsArray = Array.from(this.uniquePeriods);
-      this.options =  uniquePeriodsArray
-      console.log('membros', this.members,uniquePeriodsArray);
+      this.options = uniquePeriodsArray;
+      this.selectOption(uniquePeriodsArray[0]);
     });
   }
 
@@ -77,5 +78,15 @@ export class HistoricalComponent implements OnInit {
   selectOption(option: string) {
     this.selectedOption = option;
     this.isOpen = false;
+
+    this.filterMembers = [];
+
+    this.members.forEach((m) => {
+      if (m.period == this.selectedOption) {
+        this.filterMembers.unshift(m);
+      }
+    });
+
+    console.log('teste', this.selectedOption, this.filterMembers);
   }
 }
