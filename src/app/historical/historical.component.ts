@@ -22,17 +22,24 @@ export class HistoricalComponent implements OnInit {
     period: '',
     typeMember: '',
   }; // Corrigir para usar o tipo Member
-  options: string[] = ['teste', 'dois'];
+  options: string[] = [];
   selectedOption: string | null = null;
   isOpen = false;
+  // Create a Set to store unique periods
+  uniquePeriods = new Set<string>();
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
     this.dataService.getMembers().subscribe((data) => {
       this.members = data;
-
-      console.log('membros', this.members);
+      data.forEach(member => {
+        this.uniquePeriods.add(member.period);
+      });
+      // Convert the Set back to an array if needed
+      const uniquePeriodsArray = Array.from(this.uniquePeriods);
+      this.options =  uniquePeriodsArray
+      console.log('membros', this.members,uniquePeriodsArray);
     });
   }
 
