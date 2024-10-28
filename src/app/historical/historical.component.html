@@ -1,15 +1,3 @@
-<div class="dropdown">
-  <button (click)="toggleDropdown()">
-    {{ selectedOption || 'Selecione uma opção' }}
-  </button>
-  <div class="dropdown-menu" *ngIf="isOpen">
-    <div class="dropdown-item" *ngFor="let option of options" (click)="selectOption(option)">
-      {{ option }}
-    </div>
-  </div>
-</div>
-
-
 <table class="data-table">
   <thead>
     <tr>
@@ -19,7 +7,19 @@
       <th id="super">Supervisor</th>
       <th id="rem">Removido</th>
       <th id="ause">Ausência</th>
-
+    </tr>
+    <tr class="container-filter">
+      <h1>Perido</h1>
+      <div class="dropdown">
+        <button (click)="toggleDropdown()">
+          {{ selectedOption || 'Selecione um perido' }}
+        </button>
+        <div class="dropdown-menu" *ngIf="isOpen">
+          <div class="dropdown-item" *ngFor="let option of options" (click)="selectOption(option)">
+            {{ option }}
+          </div>
+        </div>
+      </div>
     </tr>
   </thead>
   <thead>

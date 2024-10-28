@@ -97,3 +97,13 @@ background-color: rgba(182, 36, 162, 0.822);
     }
   }
 }
+
+.container-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > .dropdown {
+    margin-left: 10px;
+  }
+}
