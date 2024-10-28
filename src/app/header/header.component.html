@@ -3,26 +3,23 @@
   <img src="https://i.pinimg.com/originals/51/d0/f2/51d0f22ac0c07a7fcb8f7e32410404db.jpg" alt="logo">
 
   <div>
-    <img src ="https://styles.redditmedia.com/t5_2i7tcq/styles/profileIcon_xv5w11vh517c1.jpeg?width=256&height=256&frame=1&auto=webp&crop=256:256,smart&s=1ef623168cc4ae8abc170391eb72ae1f0174dab3" alt="discord"></div>
+    <img
+      src="https://styles.redditmedia.com/t5_2i7tcq/styles/profileIcon_xv5w11vh517c1.jpeg?width=256&height=256&frame=1&auto=webp&crop=256:256,smart&s=1ef623168cc4ae8abc170391eb72ae1f0174dab3"
+      alt="discord">
+  </div>
 
   <button>
     Login
   </button>
-  
-    <h1 >
-      ROTA COMANDO 
-    </h1>
-  <nav class="menu">
-    <a href="/home">Semana atual</a>
-    <a href="/historico">Histórico</a>
-    <a href="#">Membros</a>
-    <a href="#">Sobre</a>
 
+  <h1>
+    ROTA COMANDO
+  </h1>
+  <nav class="menu">
+    <a (click)="goTo('/home')">Semana atual</a>
+    <a (click)="goTo('/historico')">Histórico</a>
+    <a (click)="goTo('/membros')">Membros</a>
+    <a (click)="goTo('/sobre')">Sobre</a>
   </nav>
 
-  
-
-  
-
 </header>
-
