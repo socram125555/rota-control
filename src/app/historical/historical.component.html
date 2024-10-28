@@ -20,13 +20,16 @@
   </thead>
   <tbody>
     <tr *ngFor="let member of members">
-      <td>{{member.name}}</td>
+      <td  [ngClass]="getClassType(member.typeMember)">{{member.name}}</td>
       <td>{{member.idMember}}</td>
       <td [ngClass]="getClassGoal(member.rec)">{{member.rec}}</td>
       <td [ngClass]="getClassGoal(member.prison)">{{member.prison}}</td>
+      
     </tr>
     
     
+
+
   </tbody>
   <tbody>
 

@@ -55,4 +55,13 @@ export class HistoricalComponent implements OnInit {
       return 'color-red';
     }
   }
+
+  getClassType(memberType: string): string {
+   
+    return `members-${memberType}`;
+  }
+
+
+
 }
+
