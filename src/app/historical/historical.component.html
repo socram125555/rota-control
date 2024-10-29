@@ -1,22 +1,13 @@
 <table class="data-table">
   <thead>
     <tr>
-      <th id="leg">Legendas</th>
-      <th id="esta">Estagiários</th>
-      <th id="member">Membro</th>
-      <th id="super">Supervisor</th>
-      <th id="rem">Removido</th>
-      <th id="ause">Ausência</th>
-    </tr>
-   
-    <tr>
       <th>
-          <div class="edit">
-            <h1>Período</h1>
-            <div class="dropdown">
-              <button (click)="toggleDropdown()">
-                {{ selectedOption || 'Selecione um perido' }}
-              </button>
+        <div class="edit">
+          <h1>Período</h1>
+          <div class="dropdown">
+            <button (click)="toggleDropdown()">
+              {{ selectedOption || 'Selecione um perido' }}
+            </button>
           </div>
           <div class="dropdown-menu" *ngIf="isOpen">
             <div class="dropdown-item" *ngFor="let option of options" (click)="selectOption(option)">
@@ -26,9 +17,9 @@
         </div>
       </th>
       <th></th>
-    <th>Total {{getTotalREC()}}</th>
-    <th>Total  {{getTotalprison()}}</th>
-  </tr>
+      <th>Total {{getTotalREC()}}</th>
+      <th>Total {{getTotalprison()}}</th>
+    </tr>
   </thead>
   <thead>
     <tr>
