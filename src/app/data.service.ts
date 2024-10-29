@@ -727,7 +727,7 @@ export class DataService {
       idMember: 131269,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'membro',
     },
     {
@@ -735,7 +735,7 @@ export class DataService {
       idMember: 147271,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'membro',
     },
     {
@@ -743,7 +743,7 @@ export class DataService {
       idMember: 62,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'membro',
     },
     {
@@ -751,7 +751,7 @@ export class DataService {
       idMember: 110963,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'membro',
     },
     {
@@ -759,7 +759,7 @@ export class DataService {
       idMember: 53237,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'membro',
     },
     {
@@ -767,7 +767,7 @@ export class DataService {
       idMember: 156899,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'membro',
     },
     {
@@ -775,7 +775,7 @@ export class DataService {
       idMember: 25348,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'membro',
     },
     {
@@ -783,7 +783,7 @@ export class DataService {
       idMember: 188707,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'membro',
     },
     {
@@ -791,7 +791,7 @@ export class DataService {
       idMember: 188644,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'membro',
     },
     {
@@ -799,7 +799,7 @@ export class DataService {
       idMember: 192132,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'membro',
     },
     {
@@ -807,7 +807,7 @@ export class DataService {
       idMember: 185900,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'membro',
     },
     {
@@ -815,7 +815,7 @@ export class DataService {
       idMember: 166923,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'membro',
     },
     {
@@ -823,7 +823,7 @@ export class DataService {
       idMember: 202708,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'estagiario',
     },
     {
@@ -831,7 +831,7 @@ export class DataService {
       idMember: 45326,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'estagiario',
     },
     {
@@ -839,7 +839,7 @@ export class DataService {
       idMember: 202387,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'estagiario',
     },
     {
@@ -847,7 +847,7 @@ export class DataService {
       idMember: 202650,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'estagiario',
     },
     {
@@ -855,7 +855,7 @@ export class DataService {
       idMember: 56029,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'estagiario',
     },
     {
@@ -863,7 +863,7 @@ export class DataService {
       idMember: 202141,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'estagiario',
     },
     {
@@ -871,7 +871,7 @@ export class DataService {
       idMember: 196072,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'estagiario',
     },
     {
@@ -879,7 +879,7 @@ export class DataService {
       idMember: 192353,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'estagiario',
     },
     {
@@ -887,7 +887,7 @@ export class DataService {
       idMember: 183701,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'estagiario',
     },
     {
@@ -895,7 +895,7 @@ export class DataService {
       idMember: 181415,
       rec: 0,
       prison: 0,
-      period: '',
+      period: '27/10 a 02/11',
       typeMember: 'estagiario',
     },
   ];

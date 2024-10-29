@@ -55,4 +55,25 @@ export class MainComponent implements OnInit {
       return 'color-red';
     }
   }
+
+  // Método para calcular o total de REC
+  getTotalREC(): number {
+    let totalrec = 0;
+
+    this.members.forEach((member) => {
+      totalrec = totalrec + member.rec;
+    });
+
+    return totalrec;
+  }
+
+  getTotalprison(): number {
+    let totalprison = 0;
+
+    this.members.forEach((member) => {
+      totalprison = totalprison + member.prison;
+    });
+
+    return totalprison;
+  }
 }
