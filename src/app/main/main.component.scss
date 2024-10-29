@@ -47,6 +47,26 @@ button {
   padding: 1em;
   margin: auto;
 }
+@media  screen and (max-width: 600px) {
+
+  .resp thead  {
+    display: block;
+    margin-bottom: 10px;
+    width:50%;
+  
+  }
+  .resp tbody {
+    display: block;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+}
+@media screen and (max-width:500px) {
+ table.resp th, table.resp td {
+  font-size: 14px;
+  padding: 6px;
+ }
+}
 
 table {
   width: 100%;
