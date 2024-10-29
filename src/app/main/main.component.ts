@@ -45,4 +45,14 @@ export class MainComponent implements OnInit {
     }; // Resetando para usar o tipo correto
     this.showForm = false;
   }
+
+  getClassGoal(rec: number): string {
+    if (rec >= 25) {
+      return 'color-green';
+    } else if (rec >= 15 && rec < 25) {
+      return 'color-yellow';
+    } else {
+      return 'color-red';
+    }
+  }
 }

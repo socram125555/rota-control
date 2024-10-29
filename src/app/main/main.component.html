@@ -1,1 +1,24 @@
-<h1>Home principal</h1>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>ID</th>
+        <th>Rec</th>
+        <th>Prisão</th>
+        <th>Período</th>
+        <th>Tipo de Membro</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let member of members">
+        <td>{{ member.name }}</td>
+        <td>{{ member.idMember }}</td>
+        <td [ngClass]="getClassGoal(member.rec)">{{ member.rec }}</td>
+        <td [ngClass]="getClassGoal(member.rec)">{{ member.prison }}</td>
+        <td>{{ member.period || '-' }}</td>
+        <td>{{ member.typeMember }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
