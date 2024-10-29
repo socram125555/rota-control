@@ -11,11 +11,13 @@
    
     <tr>
       <th>
-        <h1>Período</h1>
-        <div class="dropdown">
-          <button (click)="toggleDropdown()">
-            {{ selectedOption || 'Selecione um perido' }}
-          </button>
+          <div class="edit">
+            <h1>Período</h1>
+            <div class="dropdown">
+              <button (click)="toggleDropdown()">
+                {{ selectedOption || 'Selecione um perido' }}
+              </button>
+          </div>
           <div class="dropdown-menu" *ngIf="isOpen">
             <div class="dropdown-item" *ngFor="let option of options" (click)="selectOption(option)">
               {{ option }}
@@ -39,7 +41,7 @@
   <tbody>
     <tr *ngFor="let member of filterMembers">
       <td [ngClass]="getClassType(member.typeMember)">{{member.name}}</td>
-      <td>{{member.idMember}}</td>
+      <td class="back">{{member.idMember}}</td>
       <td [ngClass]="getClassGoal(member.rec)">{{member.rec}}</td>
       <td [ngClass]="getClassGoal(member.prison)">{{member.prison}}</td>
     </tr>

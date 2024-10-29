@@ -111,4 +111,5 @@ export class HistoricalComponent implements OnInit {
 
       return  totalprison;
     }
+    
 }
