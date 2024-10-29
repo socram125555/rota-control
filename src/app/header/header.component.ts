@@ -14,4 +14,13 @@ export class HeaderComponent {
   goTo(path: string) {
     this.router.navigate([path]);
   }
+
+  getScreenActive(path:string) {
+    console.log(window.location.pathname, path)
+
+    if(window.location.pathname == path) return "active"
+
+    return ""
+  }
+
 }

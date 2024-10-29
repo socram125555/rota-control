@@ -67,8 +67,11 @@ nav a {
 nav a:hover{
   color: #0D0D0D;
   background-color: #D4AF37;
+}
 
-
+.active{
+  color: #0D0D0D !important;
+  background-color: #D4AF37;
 
 }
 @media screen and (max-width: 780px) {

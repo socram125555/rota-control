@@ -14,9 +14,9 @@
   <h1>ROTA COMANDO</h1>
 
   <nav class="menu">
-    <a (click)="goTo('/home')">Semana atual</a>
-    <a (click)="goTo('/historico')">Histórico</a>
-    <a (click)="goTo('/membros')">Membros</a>
-    <a (click)="goTo('/sobre')">Sobre</a>
+    <a class="{{getScreenActive('/home')}}" (click)="goTo('/home')">Semana atual</a>
+    <a class="{{getScreenActive('/historico')}}" (click)="goTo('/historico')">Histórico</a>
+    <a class="{{getScreenActive('/membros')}}" (click)="goTo('/membros')">Membros</a>
+    <a class="{{getScreenActive('/sobre')}}" (click)="goTo('/sobre')">Sobre</a>
   </nav>
 </header>
