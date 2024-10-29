@@ -26,8 +26,11 @@ img{
  height: 100%;
  float: left;
 }
-div >img{
+div > a >img{
+  display: flex;
   width: 20px;
+  float: right;
+  align-items:center ;
 }
 button{
   float: right;
@@ -55,7 +58,7 @@ nav{
 nav a {
   text-decoration: none;
   position: relative;
-  padding:0 30px 0 30px;
+  padding:0 30px 5px 30px;
   margin-left: auto;
   font-weight: bolder;
   color: #D4AF37;

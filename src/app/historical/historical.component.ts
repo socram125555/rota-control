@@ -71,6 +71,7 @@ export class HistoricalComponent implements OnInit {
     return `members-${memberType}`;
   }
 
+
   toggleDropdown() {
     this.isOpen = !this.isOpen;
   }
@@ -89,4 +90,25 @@ export class HistoricalComponent implements OnInit {
 
     console.log('teste', this.selectedOption, this.filterMembers);
   }
+
+    // Método para calcular o total de REC
+    getTotalREC(): number {
+      let totalrec = 0;
+
+      this.filterMembers.forEach(member => {
+        totalrec = totalrec + member.rec
+      })
+
+      return  totalrec;
+    }
+
+    getTotalprison(): number {
+      let totalprison = 0;
+
+      this.filterMembers.forEach(member => {
+        totalprison = totalprison + member.prison
+      })
+
+      return  totalprison;
+    }
 }

@@ -8,19 +8,25 @@
       <th id="rem">Removido</th>
       <th id="ause">Ausência</th>
     </tr>
-    <tr class="container-filter">
-      <h1>Perido</h1>
-      <div class="dropdown">
-        <button (click)="toggleDropdown()">
-          {{ selectedOption || 'Selecione um perido' }}
-        </button>
-        <div class="dropdown-menu" *ngIf="isOpen">
-          <div class="dropdown-item" *ngFor="let option of options" (click)="selectOption(option)">
-            {{ option }}
+   
+    <tr>
+      <th>
+        <h1>Período</h1>
+        <div class="dropdown">
+          <button (click)="toggleDropdown()">
+            {{ selectedOption || 'Selecione um perido' }}
+          </button>
+          <div class="dropdown-menu" *ngIf="isOpen">
+            <div class="dropdown-item" *ngFor="let option of options" (click)="selectOption(option)">
+              {{ option }}
+            </div>
           </div>
         </div>
-      </div>
-    </tr>
+      </th>
+      <th></th>
+    <th>Total {{getTotalREC()}}</th>
+    <th>Total  {{getTotalprison()}}</th>
+  </tr>
   </thead>
   <thead>
     <tr>
