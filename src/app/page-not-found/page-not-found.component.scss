@@ -1,0 +1,82 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    text-align: center;  
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2f2f2f;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    max-width: 300px; /* Define um tamanho máximo para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 40px 0 20px 0 ; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2f2f2f;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+@media  screen and (max-width:500px){
+
+    .container h1{
+        font-size: 1.2rem;
+    }
+
+    .container p{
+        font-size: 1rem;
+    }  
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #a59c18;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1.25rem;
+    color: #a3a521;
+    margin-bottom: 20px;
+}
+
+button {
+    font-family: "Stardos Stencil", system-ui;;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #a59c18;
+    margin: 20px;
+    padding: 14px;
+    border-radius: 20px;
+}
+button a{
+    text-decoration: none;
+    color: #2f2f2f;
+}
+button:hover {
+    background-color: #2f2f2f;
+    transition: 0.3s;
+}
+button:hover a {
+    color: #a3a521;
+}
